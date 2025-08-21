@@ -12,7 +12,7 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [_open, setOpen] = useState(false);
 
   return (
     <header className="gt-nav">

@@ -1,11 +1,13 @@
 import type { Player } from "../types/player";
 
+
+
 export const PLAYERS: Player[] = [
   {
     id: "p1",
     name: "Abishek",
     role: "Batter",
-    country: "India",
+    country: "Nepal",
     jersey: 7,
     imageUrl: "/images/players/gill.jpg",
     battingStyle: "Right-hand bat"
@@ -14,7 +16,7 @@ export const PLAYERS: Player[] = [
     id: "p2",
     name: "Ram",
     role: "All-rounder",
-    country: "Afghanistan",
+    country: "Nepal",
     jersey: 19,
     imageUrl: "/images/players/rashid.jpg",
     bowlingStyle: "Right-arm leg break"
@@ -23,7 +25,7 @@ export const PLAYERS: Player[] = [
     id: "p3",
     name: "Sandeep Lamichhane",
     role: "Bowler",
-    country: "India",
+    country: "Nepal",
     imageUrl: "/images/players/mohit.jpg",
     bowlingStyle: "Right-arm medium-fast"
   },
@@ -31,7 +33,7 @@ export const PLAYERS: Player[] = [
     id: "p4",
     name: "Shyam",
     role: "Wicket-keeper",
-    country: "India",
+    country: "Nepal",
     imageUrl: "/images/players/saha.jpg"
   },
 
