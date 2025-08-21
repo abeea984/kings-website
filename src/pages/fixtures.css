@@ -1,0 +1,61 @@
+:root{
+    --gold-cream:#f5e1a4;
+    --gold-mid:#e0c067;
+    --gold-deep:#c8a64d;
+    --gt-blue-900:#0a2746;
+    --gt-text:#0f172a;
+  }
+  
+  /* Subtle aesthetic gold hero */
+  .fixtures__hero{
+    background:
+      linear-gradient(135deg, var(--gold-cream) 0%, var(--gold-mid) 45%, var(--gold-deep) 100%);
+    padding: 36px 16px;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+  }
+  .fixtures__hero__inner{
+    max-width:1200px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .fixtures__hero h1{
+    margin:0; color:#1a1a1a; letter-spacing:.6px;
+  }
+  .fixtures__breadcrumb{ color:#333; opacity:.8; display:flex; align-items:center; gap:8px; }
+  .fixtures__breadcrumb .sep{ opacity:.6; }
+  
+  /* Filters row */
+  .fixtures__filters{
+    max-width:1200px; margin:18px auto 8px; padding:0 16px;
+    display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+  }
+  .filter-card{
+    flex:1 1 420px;
+    display:grid; grid-template-columns: 1fr auto; gap:10px;
+    background:#f5f7fb; border:1px solid #e7ebf2; border-radius:12px; padding:16px;
+  }
+  .filter-title{ grid-column:1 / -1; font-weight:800; color:#1f2937; }
+  .filter-select{
+    grid-column:1 / -1;
+    padding:10px 12px; border-radius:10px; border:1px solid #d9dfe8; outline:none;
+    background:#fff;
+  }
+  .reset-btn{
+    white-space:nowrap;
+    background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px 16px;
+    font-weight:700; color:#1f2937; cursor:pointer;
+  }
+  .reset-btn:hover{ background:#f8fafc; }
+  
+  /* Grid of fixture cards */
+  .fixtures__grid{
+    max-width:1200px; margin:18px auto 40px; padding:0 16px;
+    display:grid; gap:22px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1100px){
+    .fixtures__grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px){
+    .fixtures__grid{ grid-template-columns: 1fr; }
+  }
+  

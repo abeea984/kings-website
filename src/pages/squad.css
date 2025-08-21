@@ -1,0 +1,118 @@
+:root {
+    --gt-blue-900: #0a2746;
+    --gt-blue-800: #0f3a62;
+    --gt-blue-700: #144a7c;
+    --gt-text: #e9eef6;
+    --gt-text-dim: #c6d4e6;
+    --gt-gold: #d1b96b;
+  }
+  
+  /* Hero */
+  .squad__hero {
+    background: linear-gradient(
+      90deg,
+      #e6d190 0%,   /* soft light gold-beige */
+      #d4af37 40%,  /* mid gold */
+      #c7a138 100%  /* warm muted gold */
+    );
+    color: #111;
+    padding: 40px 20px;
+  }
+    
+
+  .squad__hero__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .squad__hero h1 {
+    margin: 0 0 6px;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.6px;
+  }
+  .squad__hero p {
+    margin: 0;
+    color: var(--gt-text-dim);
+  }
+  
+  /* Controls */
+  .squad__controls {
+    max-width: 1200px;
+    margin: 0 auto 16px;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+  }
+  @media (max-width: 720px) {
+    .squad__controls { grid-template-columns: 1fr; }
+  }
+  
+  .squad__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .squad__tab {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--gt-text-dim);
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .squad__tab:hover { color: var(--gt-text); }
+  .squad__tab--active {
+    color: #fff;
+    border-color: var(--gt-gold);
+    box-shadow: inset 0 0 0 1px var(--gt-gold);
+  }
+  
+  .squad__search input {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--gt-text);
+    padding: 10px 12px;
+    border-radius: 10px;
+    min-width: 260px;
+    outline: none;
+  }
+  .squad__search input::placeholder { color: var(--gt-text-dim); }
+  .squad__search input:focus {
+    border-color: var(--gt-blue-700);
+    box-shadow: 0 0 0 2px rgba(20,74,124,0.35);
+  }
+  
+  /* Grid */
+  .squad__grid {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 16px;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 👈 always 4 columns */
+    gap: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .squad__grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .squad__grid {
+      grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+  }
+  
+  
+  .squad__empty {
+    grid-column: 1 / -1;
+    color: var(--gt-text-dim);
+    text-align: center;
+    padding: 24px 0;
+  }
+  

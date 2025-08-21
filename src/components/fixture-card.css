@@ -1,0 +1,94 @@
+:root{
+    --gt-blue-900:#0a2746;
+    --gt-blue-800:#0f3a62;
+    --gt-blue-700:#144a7c;
+    --gt-text:#e9eef6;
+    --gt-text-dim:#c6d4e6;
+    --gt-gold:#d1b96b;
+    --fx-bg:#0c2034;
+  }
+  
+  /* Card shell */
+  .fx-card{
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)),
+      radial-gradient(120% 100% at 50% 0%, rgba(0,0,0,0.1), transparent 55%),
+      var(--fx-bg);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    overflow: hidden;
+    color: var(--gt-text);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  }
+  
+  /* Top line: venue + badge */
+  .fx-card__top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 14px 0 14px;
+    font-size:.9rem;
+    color: var(--gt-text-dim);
+  }
+  .fx-badge{
+    background:#ef4444;
+    color:#fff;
+    font-weight:800;
+    font-size:.75rem;
+    padding:6px 10px;
+    border-radius:8px;
+  }
+  .fx-badge--live{
+    background:#16a34a;
+  }
+  .fx-venue{
+    opacity:.95;
+  }
+  
+  /* Mid: scores + logos + vs */
+  .fx-card__mid{
+    padding: 10px 14px 14px 14px;
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items:center;
+    gap:22px;
+  }
+  
+  .fx-side{
+    display:grid;
+    justify-items:center;
+    gap:6px;
+  }
+  .fx-score{
+    font-weight:900;
+    font-size: clamp(1.6rem, 1.1rem + 1.2vw, 2.2rem);
+  }
+  .fx-logo{
+    width:40px; height:40px; object-fit:contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,.4));
+  }
+  .fx-overs{
+    color: var(--gt-text-dim);
+  }
+  
+  /* VS puck */
+  .fx-vs{
+    width:44px; height:44px;
+    display:grid; place-items:center;
+    border-radius:999px;
+    background: rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+    font-weight:800;
+    color: var(--gt-text);
+  }
+  
+  /* Result bar */
+  .fx-result{
+    background: rgba(255,255,255,0.06);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 12px 14px;
+    text-align:center;
+    color:#dbeafe;
+    font-weight:700;
+  }
+  
